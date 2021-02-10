@@ -29,6 +29,7 @@ ext {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.2.2.RELEASE'
+	implementation 'com.hazelcast:hazelcast-spring:4.0.3'
 
 	//API
 	implementation 'me.sargunvohra.lib:pokekotlin:2.3.1'

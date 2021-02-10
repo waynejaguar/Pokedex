@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.List;
 import me.sargunvohra.lib.pokekotlin.client.PokeApi;
 import me.sargunvohra.lib.pokekotlin.client.PokeApiClient;
+import me.sargunvohra.lib.pokekotlin.model.Characteristic;
+import me.sargunvohra.lib.pokekotlin.model.EvolutionChain;
 import me.sargunvohra.lib.pokekotlin.model.NamedApiResource;
 import me.sargunvohra.lib.pokekotlin.model.NamedApiResourceList;
 import me.sargunvohra.lib.pokekotlin.model.Pokemon;
