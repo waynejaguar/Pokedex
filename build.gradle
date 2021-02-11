@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.5.0-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'application'
 	id 'java'
 	id 'jacoco'
 }
@@ -13,6 +14,9 @@ configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
+}
+application {
+	mainClassName = 'com.pokemon.Pokedex.PokedexApplication'
 }
 
 repositories {
@@ -45,6 +49,12 @@ dependencies {
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.pokemon.Pokedex.PokedexApplication'
 	}
 }
 
